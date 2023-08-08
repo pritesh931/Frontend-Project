@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&display=swap');
+
+body{
+    width: min(100% - 15px, 850px);
+    margin-inline: auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+ 
+}
+.container {
+    display: inline-block;
+}
+/* HEADING */
+h3 {
+    color: #007F61;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 0.1rem;
+}
+h3::before, h3::after {
+    content: "";
+    height: 2px;
+    width: auto;
+    background-color: #007F61;
+    display: block;
+}
+
+/* BOXES */
+.box {
+    width: 400px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: -90px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: -90px;
+    
+}
+
+.box3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: -90px;
+}
+
+/* SELECT TAG */
+label {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    padding-right: 10px;
+}
+  
+select {
+    font-size: 0.7rem;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    accent-color: #007F61;
+}
+
+/* ACCORDIONS */
+
+.accordion-content {
+    height:150px;
+}
+
+ #accordion-content1 {
+    margin-right: 156px;
+}
+
+ #accordion-content1 p {
+    display: inline-block;
+    font-size: 12px;
+}
+
+ #accordion-content2 {
+    margin-right: 156px;
+}
+
+ #accordion-content2 p {
+    display: inline-block;
+    font-size: 12px;
+}
+
+#accordion-content3 {
+    margin-right: 156px;
+}
+
+ #accordion-content2 p {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.accordion .accordion-content {
+    display: none;
+}
+.accordion.active .accordion-heading  {
+    border:2px solid #007F61;
+    background-color: #87f5db;
+}
+.accordion.active .accordion-content {
+    display: block;
+}
+
+/* TOTAL AMOUNT */
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* BUTTON */
+button{
+    width: 399px;
+    height: 50px;
+    background-color: #007F61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
